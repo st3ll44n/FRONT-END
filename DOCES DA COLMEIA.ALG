@@ -6,10 +6,20 @@ Var
 
 opcao : caractere
 valortotal: real
+procedimento adicionaraocarrinho(vp : real)
+var
+   nomep : caractere
+inicio
+      escreval ("Digite o nome do produto: ")
+      leia(nomep)
+      escreval ("Item ",nomep," adicionado!")
+      valortotal <- valortotal + vp
+      escreval ("Valor total do carrinho R$:",valortotal)
+fimprocedimento
 
 Inicio
 
-escreval("          Catalogo          ")
+escreval("-----------Catalogo------------")
 escreval ("                      ")
 escreval ("1 - TRUFA               R$ 8,00")
 escreval ("2 - BOLO NO POTE       R$ 10,00")
@@ -25,36 +35,20 @@ leia(opcao)
 escolha(opcao)
 
 caso "1"
-     escreval ("Item TRUFA x1 adicionado!")
-valortotal <- valortotal + 8,00
-escreval ("Valor total do carrinho R$:",valortotal)
-
+     adicionaraocarrinho(8)
 caso "2"
-     escreval ("Item BOLO NO POTE x1 adicionado!")
-valortotal <- valortotal + 10,00
-escreval ("Valor total do carrinho R$:",valortotal)
-
+     adicionaraocarrinho(10)
 caso "3"
-     escreval ("Item COPO DA FELICIDADE x1 adicionado!")
-valortotal <- valortotal + 15,00
-escreval ("Valor total do carrinho R$:",valortotal)
-
+     adicionaraocarrinho(15)
 caso "4"
-     escreval ("Item DOCINHO x1 adicionado!")
-valortotal <- valortotal + 3,00
-escreval ("Valor total do carrinho R$:",valortotal)
-
+     adicionaraocarrinho(3)
 caso "5"
-     escreval ("Item PUDIM x1 adicionado!")
-valortotal <- valortotal + 25,00
-escreval ("Valor total do carrinho R$:",valortotal)
-
+     adicionaraocarrinho(25)
 caso "6"
      escreval ("Compra cancelada!")
 
 outrocaso
 escreval ("Opção inválida!")
-
 
 fimEscolha
 
