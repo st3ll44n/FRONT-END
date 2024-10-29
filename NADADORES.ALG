@@ -1,6 +1,5 @@
 Algoritmo "nadadores"
 
-
 Var
 
 nome :caractere
@@ -19,18 +18,26 @@ leia(idade)
 se (idade>=5) e (idade<=7) entao
 escreval ("Você está na categoria Infantil A")
 
-senao (idade>=8) e (idade<=11) entao
-escreval ("Você está na categoria Infantil B")
+         senao
+         se(idade>=8) e (idade<=11) entao
+         escreval ("Você está na categoria Infantil B")
+         
+         senao
+         se(idade>=12) e (idade<=13) entao
+         escreval ("Você está na categoria Juvenil A")
 
-senao(idade>=12) e (idade<=13) entao
-escreval ("Você está na categoria Juvenil A")
-
-senao(idade>=14) e (idade<=17) entao
-escreval ("Você está na categoria Juvenil B")
-
-senao(idade>=18) entao
-escreval ("Você está na categoria Adulto)
-
+         senao
+         se(idade>=14) e (idade<=17) entao
+         escreval ("Você está na categoria Juvenil B")
+         
+         senao
+         se(idade>=18) entao
+         escreval ("Você está na categoria Adulto")
 fimse
+fimse
+fimse
+fimse
+fimse
+
 
 Fimalgoritmo
