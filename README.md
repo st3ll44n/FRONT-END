@@ -1,2 +1,2 @@
 # FRONT-END
-Repositório para sala de aula 
+Repositório para guardar algoritmos e outros materiais feitos em sala de aula
